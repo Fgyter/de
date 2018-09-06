@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem "rails_12factor", group: :production
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -47,7 +48,7 @@ end
 
 group :production do
   gem 'pg', '~> 0.20'
-  gem 'rails_12factor'
+  
 end
 
 ruby "2.5.1"
