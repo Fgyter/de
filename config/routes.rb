@@ -1,7 +1,7 @@
-require './app/store'
+#require './app/store'
 
 Rails.application.routes.draw do
-  match 'catalog' => StoreApp.new, via: :all
+  #match 'catalog' => StoreApp.new, via: :all
   get 'admin' => 'admin#index'
   controller :sessions do
     get  'login' => :new
