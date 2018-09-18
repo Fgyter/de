@@ -1,5 +1,5 @@
 #require './app/store'
-
+root 'store#index'
 Rails.application.routes.draw do
   #match 'catalog' => StoreApp.new, via: :all
   get 'admin' => 'admin#index'
@@ -19,6 +19,6 @@ Rails.application.routes.draw do
     resources :line_items
     resources :carts
     get 'store/index'
-    root 'store#index', as: 'store', via: :all
+    #root 'store#index', as: 'store', via: :all
   end
 end
